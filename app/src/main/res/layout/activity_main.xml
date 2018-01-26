@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fi.tamk.jorix3.musicplayer.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/play_music"
+        android:text="Play Music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="playMusic"/>
+
+    <Button
+        android:id="@+id/stop_music"
+        android:text="Stop Music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="stopMusic"/>
+
+    <Button
+        android:tag="increase_volume"
+        android:text="Increase Volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="volumeControl"/>
+
+    <Button
+        android:tag="decrease_volume"
+        android:text="Decrease Volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="volumeControl"/>
+
+</LinearLayout>
